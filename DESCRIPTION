@@ -1,0 +1,31 @@
+Package: stanmygrad
+Title: Examples of Custom Gradient Implementation in 'Stan'
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Martin",
+           family = "Lysy",
+           role = c("aut", "cre"),
+           email = "mlysy@uwaterloo.ca")
+Description: Provides several extensively documented and tested examples of adding user-defined C++ functions with their gradients to 'Stan'.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Depends: 
+    R (>= 3.4.0)
+Imports: 
+    methods,
+    Rcpp (>= 0.12.0),
+    RcppParallel (>= 5.0.1),
+    rstan (>= 2.18.1)
+LinkingTo: 
+    BH (>= 1.66.0),
+    Rcpp (>= 0.12.0),
+    RcppEigen (>= 0.3.3.3.0),
+    RcppParallel (>= 5.0.1),
+    rstan (>= 2.18.1),
+    StanHeaders (>= 2.18.0)
+SystemRequirements: GNU make
+Suggests: 
+    testthat
