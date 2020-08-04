@@ -1,7 +1,7 @@
-/// @file test-foo_dist.stan
-/// @brief Test file for the `foo_dist` distribution.
+/// @file test_var_ldet.stan
+/// @brief Test file for the `bar_fun()` function.
 ///
-/// Here is a simple test mechanism for each of the four `foo_dist` wrappers, i.e., with or without derivatives wrt each of `y` and `mu`.
+/// Here is a simple test mechanism for each of the `bar_fun()` wrappers, i.e., with or without derivatives wrt each of `alpha` and `beta`.
 
 functions {
   // forward declaration: *required* by `rstan::stanc()` (tested)

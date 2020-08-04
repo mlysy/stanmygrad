@@ -23,6 +23,18 @@ bar_fun_sim <- function(N) {
   list(alpha = runif(N), beta = runif(N))
 }
 
+# var_ldet and its gradient
+# note that gradient is returned as a vector to match stan output
+var_ldet <- function(X) {
+  C <- chol(X)
+  list(lp = 2 * sum(log(diag(C))),
+       X = c(chol2inv(C)))
+}
+
+# generate random var_ldet arguments
+var_ldet_sim <- function(N) {
+  list(X = crossprod(matrix(rnorm(N^2), N, N)))
+}
 
 # give `_dat` extension to named arguments.
 as_data <- function(args, data_args) {

@@ -9,10 +9,12 @@ using namespace Rcpp;
 
 RcppExport SEXP _rcpp_module_boot_stan_fit4test_bar_fun_mod();
 RcppExport SEXP _rcpp_module_boot_stan_fit4test_foo_dist_mod();
+RcppExport SEXP _rcpp_module_boot_stan_fit4test_var_ldet_mod();
 
 static const R_CallMethodDef CallEntries[] = {
     {"_rcpp_module_boot_stan_fit4test_bar_fun_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4test_bar_fun_mod, 0},
     {"_rcpp_module_boot_stan_fit4test_foo_dist_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4test_foo_dist_mod, 0},
+    {"_rcpp_module_boot_stan_fit4test_var_ldet_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4test_var_ldet_mod, 0},
     {NULL, NULL, 0}
 };
 
